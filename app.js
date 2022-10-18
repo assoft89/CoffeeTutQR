@@ -104,8 +104,6 @@ function send_msg(){
         div_msg.hidden = true;
         bt_send.textContent = 'Спасибо!'; 
     });
-    //bt_send.hidden = false
-
  }
 if (bt_send.textContent == 'Спасибо!'){
     bt_send.textContent = 'Отправить';
@@ -114,14 +112,6 @@ if (bt_send.textContent == 'Спасибо!'){
 }
 
 }
-
-//tg_send_msg("Открыли страницу\n " + JSON.stringify(getUrlVars()));
-var name_ta = get_name(getUrlVars().id);
-if (name_ta !== ''){
-    div_id_ta.textContent = name_ta;
-    div_id_ta.classList.remove('hide');
-}
-
 
 function get_name(id){
     var arr = {
@@ -140,3 +130,16 @@ function get_name(id){
     var res = arr[id];
     return  typeof res == 'undefined' ?  '' : res  ;
 }
+
+var vars = getUrlVars();
+var name_ta = get_name(vars.id);
+
+if (name_ta !== ''){
+    div_id_ta.textContent = name_ta;
+    div_id_ta.classList.remove('hide');
+}
+
+tg_send_msg("Открыли страницу\n " + JSON.stringify(vars));
+
+
+
