@@ -20,7 +20,7 @@ body {
     color: rgb(255, 255, 255);
     text-shadow: 0 1px 0 #161616;
     padding: 15px;
-    margin: 13px;
+    margin: 10px;
  
     display: block;
     position: relative;
@@ -46,7 +46,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    max-width: 150px;
+    max-width: 100px;
   }
   textarea {
     width: 100%;
@@ -64,6 +64,7 @@ body {
     border-radius: 10px;
     margin-right: 5px;
     font-size: 1.3em;
+    background-color: #fffbca;
   }
   .hide{
     display: none;
