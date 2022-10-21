@@ -139,7 +139,7 @@ if (name_ta !== ''){
     div_id_ta.classList.remove('hide');
 }
 
-//tg_send_msg("Открыли страницу\n " + JSON.stringify(vars));
+tg_send_msg("Открыли страницу\n " + JSON.stringify(vars));
 
 
 
