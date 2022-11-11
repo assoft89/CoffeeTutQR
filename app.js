@@ -121,8 +121,8 @@ function get_name(id){
         '4' :   "ТЦ Юность",
         '5' :   "ТЦ Южный",
         '6' :   "Эко Базар",
-        '7' :   "Цветы",
-        '8' :   "Дом",
+        '7' :   "Ленина 72, Пятёрочка",
+        '8' :   "ТЦ Ноябрьский",
         '9' :   "Муравленко 22"
 
     };
@@ -139,7 +139,7 @@ if (name_ta !== ''){
     div_id_ta.classList.remove('hide');
 }
 
-tg_send_msg("Открыли страницу\n " + JSON.stringify(vars));
+tg_send_msg("Открыли страницу\n " + name_ta);//JSON.stringify(vars)
 
 
 
