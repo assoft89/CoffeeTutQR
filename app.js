@@ -99,15 +99,17 @@ function send_msg(){
  if (div_msg.value !== ''){
     var name = get_name(getUrlVars().id);
 
-    tg_send_msg("Отзыв:\n " + name + ': ' + div_msg.value, function(){
+    tg_send_msg("Отзыв:\n " + name + ': ' + div_msg.value + ', ' + contacts.value, function(){
         div_msg.value = '';
         div_msg.hidden = true;
+        contacts.hidden = true;
         bt_send.textContent = 'Спасибо!'; 
     });
  }
 if (bt_send.textContent == 'Спасибо!'){
     bt_send.textContent = 'Отправить';
     div_msg.hidden = false;
+    contacts.hidden = false;
     div_msg.focus();
 }
 
